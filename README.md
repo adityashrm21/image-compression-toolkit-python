@@ -23,7 +23,7 @@ This Python package specializes in reducing the size of images. It contains thre
 |`img_path`|`string`| File path to a `png` image|
 |`H`|`int`| Desired height of the cropped image |
 |`W`|`int`| Desired width of the cropped image|
-|`out_path`|``string`| File path to where to save the cropped `png` image |  
+|`out_path`|`string`| File path to where to save the cropped `png` image |  
 
   - Output:
     - `string`, file path to cropped image (`png` image with size `H x W`)
@@ -77,10 +77,13 @@ imageCompress.image_size("../data/bigger_test.png")
 
 To crop the image:  
 ```
-imageCompress.crop("../data/bigger_test.png", 175, 200, "../data/crop_img.png")
+imageCompress.crop("../data/bigger_test.png", 175, 200, "../data/cropped_img.png")
 ```
 
 > This returns the absolute file path to the cropped image, as specified in the `out_path` argument of the function. The cropped image is shown below. 
+```
+..data/cropped_img.png
+```
 
 <img src = "https://raw.githubusercontent.com/UBC-MDS/image-compression-toolkit-python/update_tests/data/crop_img.png" >
 
@@ -90,6 +93,10 @@ imageCompress.compress("..data/bigger_test.png", 2, "../data/compressed_img.png"
 ```
 
 > This returns the absolute file path to the compressed image. The compressed image is shown below.   
+
+```
+..data/compressed_img.png
+```
 
 <img src = "https://raw.githubusercontent.com/UBC-MDS/image-compression-toolkit-python/update_tests/data/compressed_img.png" >
 
